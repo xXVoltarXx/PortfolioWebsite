@@ -4,8 +4,15 @@ html
     height: 99%;
     flex-shrink: 0;
     font-family: inter;
-    border: 4px solid #00C2FF;
+    
     background: #2F2F2F;
+}
+
+body
+{
+    border: 4px solid #00C2FF;
+    padding: 0;
+    margin: 0;
 }
 
 h1
@@ -23,8 +30,9 @@ p
     position: sticky;
     top: 0;
     z-index: 999; /*Hack I found to make sure the blur is above everything! :) */
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
     width: 100%;
+    background: rgba(255, 255, 255, 0.05);
 }
 
 ul 
@@ -54,7 +62,8 @@ li a
     padding: 14px 16px;
     text-decoration: none;
 }
-  
+
+/*Learned this stuff from W3 schools for CSS!*/
 li a:hover 
 {
     background-color: var(--button-hover-color, #ffffff);
@@ -83,15 +92,76 @@ li a:hover
     background-color: #ffe600;
     --button-hover-color: #c4b000;
 }
+
 .futurenotes 
 {
     background-color: #ff0000;
     --button-hover-color: #af0000;
 }
 
-#photoCollage
+/*Although we talked about how to do this in class, I wanted to do some more advanced things with this overlay so I did a lot of googling to learn how to do some things (like the transform translate thing)*/
+.container 
 {
+    position: relative;
+    width: 99.65%;
+    height: 800px;
+    background: url("Images/PhotoCollage.png") center/cover no-repeat;
+    border-radius: 5px;
+    border: 4px solid black;
+    left: 0;
+    right: 10px;
+}
+
+/*Got most of this code from the code mode thing on Figma*/
+.overlay 
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 488px;
+    height: 286px;
+    flex-shrink: 0;
+    backdrop-filter: blur(5px);
+    border-radius: 25px;
     display: flex;
-    
-    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.05);
+}
+  
+.overlay p 
+{
+    color: #FFF;
+    text-align: center;
+    font-size: 55px;
+    font-family: Inter;
+    font-weight: 100;
+}
+
+#smallTextOverlay
+{
+    font-size: 24px;
+}
+
+#about
+{
+    color: white;
+    text-align: center;
+    font-weight: 100;
+    font-size: 64px;
+    display: flex;
+    flex: 1;
+    padding: 10px;
+}
+
+#text
+{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#smallTextAbout
+{
+    font-size: 30px;
 }
