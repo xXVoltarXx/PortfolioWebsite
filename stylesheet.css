@@ -125,7 +125,7 @@ li a:hover
     left: 50%;
     transform: translate(-50%, -50%);
     width: 488px;
-    height: 286px;
+    height: 20vh;
     flex-shrink: 0;
     backdrop-filter: blur(5px);
     border-radius: 25px;
