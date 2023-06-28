@@ -108,6 +108,14 @@ li a:hover
     right: 0vw;
 }
 
+.construction .imageFix
+{
+    position: relative;
+    height: 95vh;
+    border: 4px solid black;
+    right: 0vw;
+}
+
 /*Although we talked about how to do this in class, I wanted to do some more advanced things with this overlay so I did a lot of googling to learn how to do some things (like the transform translate thing)*/
 .container 
 {
@@ -134,7 +142,14 @@ li a:hover
     justify-content: center;
     background: rgba(255, 255, 255, 0.05);
 }
-  
+
+.construction .overlay
+{
+    height: 100%;
+    width: 100%;
+    border-radius: 0px;
+}
+
 .overlay p 
 {
     color: #FFF;
