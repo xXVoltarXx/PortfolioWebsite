@@ -17,7 +17,22 @@ body
 
 #contactBody
 {
-    border: 4px solid #ffe600;
+    border: 4px solid #FF5733;
+}
+
+#portfolioBody
+{
+    border: 4px solid #8c00be;
+}
+
+#projectsBody
+{
+    border: 4px solid rgb(0, 192, 77);
+}
+
+#notesBody
+{
+    border: 4px solid #b90000;
 }
 
 h1
@@ -76,32 +91,32 @@ li a:hover
 
 .about 
 {
-    background-color: #00C2FF;
-    --button-hover-color: #0093c0; 
+    background-color: #0097c5;
+    --button-hover-color: #006f91; 
 }
   
 .portfolio 
 {
-    background-color: #BD00FF;
-    --button-hover-color: #8d00c0; 
+    background-color: #8c00be;
+    --button-hover-color: #5f0081; 
 }
   
 .projects 
 {
-    background-color: #0F6;
-    --button-hover-color: rgb(0, 187, 75); /*Idk why this switched to rgb instead of hashtag form...*/
+    background-color: rgb(0, 192, 77);
+    --button-hover-color: rgb(0, 134, 54); /*Idk why this switched to rgb instead of hashtag form...*/
 }
 
 .contact
 {
-    background-color: #ffe600;
-    --button-hover-color: #c4b000;
+    background-color: #FF5733;
+    --button-hover-color: #b33e24;
 }
 
 .futurenotes 
 {
-    background-color: #ff0000;
-    --button-hover-color: #af0000;
+    background-color: #b90000;
+    --button-hover-color: #8d0000;
 }
 
 .imageFix
