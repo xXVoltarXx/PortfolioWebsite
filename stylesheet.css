@@ -40,6 +40,11 @@ h1
     font-weight: 200;
 }
 
+h2
+{
+    font-weight: 200;
+}
+
 p
 {
     font-weight: 200;
@@ -200,7 +205,6 @@ li a:hover
 
 #title
 {
-    
     color: white;
     text-align: center;
     font-weight: 200;
@@ -213,6 +217,11 @@ li a:hover
 {
     padding-left: 40px;
     padding-right: 40px;
+}
+
+#subtitle
+{
+    font-size: 40px;
 }
 
 #smallTextAbout
@@ -239,6 +248,12 @@ li a:hover
     padding-right: 40px;
     vertical-align: middle;
     font-size: 30px;
+}
+
+#portfolioText
+{
+
+    align: center;
 }
 
 #links div
