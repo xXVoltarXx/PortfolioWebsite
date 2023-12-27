@@ -263,8 +263,9 @@ li a:hover
 
 #portfolioText
 {
-
     align: center;
+    width: 60%;
+    height: fit-content;
 }
 
 #links div
