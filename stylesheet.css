@@ -252,3 +252,8 @@ a, a:visited {
     vertical-align: middle;
     width: 100px;
 }
+
+#projectsSection {
+    width: 80%;
+    height: fit-content;
+}
