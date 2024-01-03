@@ -254,7 +254,9 @@ a, a:visited {
 }
 
 #projectsSection {
+    margin:auto;
     text-align: center;
+    width: 80%;
 }
 
 #projectsSection h3 {
@@ -276,8 +278,31 @@ a, a:visited {
     display: inline-block
 }
 
+#projectsSection #subtitle {
+    margin: 0;
+}
+
 #projectsSection li {
     font-weight: 25;
     font-size: 30px;
 }
 
+#projectsSection li a{
+    text-decoration: underline;
+}
+
+#projectText {
+    text-align: center;
+    font-size: 30px;
+    width: 50%;
+    margin: auto;
+}
+
+#projectText p {
+    font-weight: 100;
+}
+
+#returnToProjects a {
+    color: rgb(0, 192, 77);
+    font-size: 50px;
+}
