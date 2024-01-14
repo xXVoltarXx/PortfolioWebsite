@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Pages",
+    "\\Pages\\MainPages",
+    "\\Pages\\SubPages",
+    "\\Pages\\SubPages\\ProjectPages"
   ],
-  "SelectedNode": "\\stylesheet.css",
+  "SelectedNode": "\\Pages\\MainPages\\projects.html",
   "PreviewInSolutionExplorer": false
 }
