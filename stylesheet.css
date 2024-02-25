@@ -267,7 +267,12 @@ a, a:visited {
     font-size: 40px;
 }
 
-#portfolioList {
+#portfolioListsContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.portfolioList {
     text-align: center;
     height: fit-content;
 }
