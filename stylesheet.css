@@ -277,13 +277,15 @@ a, a:visited {
     height: fit-content;
 }
 
-#portfolioSection ul {
+
+.portfolioList ul {
     list-style-position: inside;
     text-align: left;
     padding-left: 20px; 
     margin-top: 10px;
     margin-bottom: 20px; 
     display: inline-block
+    
 }
 
 #portfolioSection #subtitle {
@@ -293,6 +295,7 @@ a, a:visited {
 #portfolioSection li {
     font-weight: 25;
     font-size: 30px;
+    margin-bottom: 10px;
 }
 
 #portfolioSection li a{
