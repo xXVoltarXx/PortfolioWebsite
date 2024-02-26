@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Peril in Paradise</title>
+    <link rel="stylesheet" href="../../../stylesheet.css">
+    <style>
+        @font-face {
+            font-family: inter;
+            src: url(../../../interFont.TTF);
+        }
+    </style>
+  </head>
+  <body id = "portfolioBody">
+    <header class="sticky-header">
+      <nav>
+        <ul>
+          <li><a href="../../../index.html" class="about">About Me</a></li>
+          <li><a href="../../MainPages/portfolio.html" class="portfolio">Portfolio</a></li>
+          <li><a href="../../MainPages/resume.html" class="resume">Resume</a></li>
+          <li><a href="../../MainPages/contact.html" class="contact">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="imageFix">
+      <div class="container">
+        <div class="overlay">
+          <p>Michael Kleinbriel<br><span id="smallTextOverlay">Game Developer | Animator | Programmer</span></p>
+        </div>
+      </div>
+    </div>
+
+    <div id = "base">
+      <div id = "projectsSection">
+        <div>
+          <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTnbiE2ZyV8NrJ2jJkDrfJoNkJIcGlzCLe9nu4VsXGJz1jEbhQsMybQzXBgWDfibsteuI6s-j9twOeU/embed?start=false&loop=true&delayms=30000" frameborder="0" width="1280" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+        </div>
+        <h1 id = "title">Peril in Paradise</h1>
+        <h2 id = "subtitle">Personal Project made to increase my understanding of Unity's VR systems<br></h2>
+        <div id = "projectText">
+          <p>Everything seen in the video was made by me from scratch.</p>
+          <p>I've always been fascinated by VR games and to be more specific, physics-based VR games like Blade and Sorcery, Boneworks, and Half Life: Alyx. So, I decided to try and learn how these games were made by trying to make my own in Unity. This project was made in three weeks of on-and-off work in July 2022 and it required a lot of research. This was before I even went to college to learn more about video game development and Unity. The video above showcases the project but here is what I'm most proud of. To start, the player controller ended up exactly how I wanted it to be. It is entirely physics based and every part of the body is connected with either a fixed joint or a configurable joint. The player moves by having a "monoball" sphere roll around have friction move the player. The player physically jumps by compressing its body down to its feet and then quickly expanding, just like real life. The hands are connected to the body via configurable joints and the player can climb by grabbing with their hands and pulling up. They can also grab other objects (like the "crowbar" in the video) and use them to grab onto ziplines to move around. My biggest accomplishment though is my physic's based hands. Each finger has physics attached to them and that allows them to wrap around objects that the player grabs realistically. No need to set hand poses for every object, the player can realistically grab anything. However, the current implementation is a little bit buggy but I just need to get around to fixing it, I've has pseudocode written for over a year and a half. <br><br>The player obviously needs some tweaking though and some refactoring due to the fact that this was pretty much my first time ever using Unity before and I was just learning as I went along. One thing that I would like to point out is that everything was custom made. Unity has its XR toolkit with some prebuilt stuff but it is really bad. It doesn't allow for physics interactions at all, everything is just translation. This is good if you want to make a game Job Simulator or Beat Saber but terrible if you want to make a physics-based game like Boneworks and Half Life: Alyx. So, I decided to ditch all of that and make my own systems instead.<br><br>I'm really proud of what I made for this project considering it was my first time using Unity really. It definitely needs a complete remake today though where I can use my current-day skills. But, it's not like all of the code I wrote back then was bad, it just needs some improving.</p>
+        </div>
+        <div id = "returnToPortfolio"><a href="../../MainPages/portfolio.html">Return to Portfolio Page</a></div>
+      </div>
+    </div>
+  </body> 
+</html>
