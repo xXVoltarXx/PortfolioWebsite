@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mega Man 2 Remake</title>
+    <link rel="stylesheet" href="../../../stylesheet.css">
+    <style>
+        @font-face {
+            font-family: inter;
+            src: url(../../../interFont.TTF);
+        }
+    </style>
+  </head>
+  <body id = "portfolioBody">
+    <header class="sticky-header">
+      <nav>
+        <ul>
+          <li><a href="../../../index.html" class="about">About Me</a></li>
+          <li><a href="../../MainPages/portfolio.html" class="portfolio">Portfolio</a></li>
+          <li><a href="../../MainPages/resume.html" class="resume">Resume</a></li>
+          <li><a href="../../MainPages/contact.html" class="contact">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="imageFix">
+      <div class="container">
+        <div class="overlay">
+          <p>Michael Kleinbriel<br><span id="smallTextOverlay">Game Developer | Animator | Programmer</span></p>
+        </div>
+      </div>
+    </div>
+
+    <div id = "base">
+      <div id = "projectsSection">
+        <div>
+          <iframe src="https://drive.google.com/file/d/1SEtizOyepohqaCwwLbzqaaSPrHAECKDU/preview" width="1280" height="720" allow="autoplay"></iframe>
+        </div>
+        <h1 id = "title">Mega Man 2 Remake</h1>
+        <h2 id = "subtitle">Remake of the Crash Man stage in Mega Man 2<br>Made for MI 231<br></h2>
+        <div id = "projectText">
+          <p>Before I start describing what I made, I feel like I should share what I didn't make. To start, the music and sprites are obviously from Mega Man 2. The basic player controller (moving and jumping) and the ladder climbing were provided by Jeremy Bond. All I did with those two is tweak some values to match Mega Man 2 exactly. I even went as far as to compare recordings of my player vs the original and look at sprite pixels to make sure they lined up exactly. Everything else in the video was made by me.</p>
+          <p>Sadly, the scripts that Jeremy made caused some weird issues which only appeared in builds, both WebGL and exe. So, I sadly can't make this game playable on this website like with what I did with Vault Raiders. Jeremy and I spent 30 minutes trying to fix the errors caused by the scripts and we couldn't figure it out. It would have required us to debug the build and that was greatly out of scope for both the class and the project. So, I recorded a playthrough from within the Unity editor. When I get to the moving platforms part, I skip it because it is just too hard. :(<br>Anyways, here's some stuff about the project.</p>
+          <p>I had an absolute blast remaking this level from Mega Man 2. I personally believe that this was my best game project that I made for MI 231. My goal was to be as faithful to the original game as possible and that included the pixel snapping of the player and enemies (Unity's pixel perfect camera component) and how everything functioned and worked within the game. I even went as far to include the fact that only three player bullets can exist on the screen at a time due to memory limitations that Jeremy informed me about in the original game. Anyways, I would say that the only things that aren't pretty much 1-to-1 with the original game is the music slider, lives UI in the top right of the screen, and the obvious lack of animations and the Crash Man boss.</p>
+          <p>When making this project, I tried my best to code my scripts in such a way that it would allow for easier additions and modifications later on. Every script used inheritance when needed and big scripts were broken up into smaller ones which allowed them to be used in multiple areas. Even the prefabs are designed in a good way too! For example, the pickup prefab decides what pickup it will be when it's spawned in and which one it chooses is based on the probabilities from the original game.</p>
+          <p>I would say that the best part about this project is the mole enemy and the bird enemies. Starting with the mole enemy, it has multiple different states that its "AI" can be in. It starts out one block underground and when the player enters within its range, it pops up, shoots at the player, then runs to the player's position where it initially detected them (code-wise, it's moving to the player's x position) and then it hops back into the ground and the cycle repeats. Also, it is shooting raycasts left and right which tell it when to jump up in order to not get stuck on ledges. This enemy functions pretty much 1-to-1 to the original game and I'm very proud of it. The next enemy is the bird enemy. It flies across the screen and drops an egg when the player is within range. When this egg collides with something, it breaks and spawns in multiple baby birds within one unit around the egg. These baby birds immediately fly towards the player but their directions are all somewhat different as they are all aiming at a position which is randomly around one unit circle of the player. This prevents them from all overlapping at the player's position which looks werid.</p>
+          <p>All in all, I'm very proud of this project and all of the work that went into it. I highly recommend pulling up gameplay of the original game and watching it side-by-side with my version, they are almost the same!</p>
+        </div>
+        <div id = "returnToPortfolio"><a href="../../MainPages/portfolio.html">Return to Portfolio Page</a></div>
+      </div>
+    </div>
+  </body> 
+</html>
