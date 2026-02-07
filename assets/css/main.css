@@ -3949,7 +3949,8 @@ input, select, textarea {
 }
 
 .video-wrapper {
-  width: min(90vw, 1100px);
+  width: 100%;
+  max-width: 1300px; /* visual sweet spot */
   margin: 2rem auto;      /* centers horizontally */
   aspect-ratio: 16 / 9;   /* YouTube ratio */
 }
@@ -3959,4 +3960,66 @@ input, select, textarea {
   height: 100%;
   border: 0;
   display: block;
+}
+
+body #main.wrapper > .inner {
+  padding-left: 15rem !important;
+  padding-right: 15rem !important;
+}
+
+@media (max-width: 1280px) {
+  body #main.wrapper > .inner {
+    padding-left: 5rem !important;
+    padding-right: 5rem !important;
+  }
+}
+
+@media (max-width: 736px) {
+  body #main.wrapper > .inner {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+}
+
+/* Card-style sections */
+#main .content-box {
+  margin: 0 0 5rem -4vw;      /* spacing + width control */
+  padding: 3rem 3rem 0rem 3rem; /* spacing */
+  background: rgba(255, 255, 255, 0.025);
+  border-radius: 0.75rem;
+}
+
+/* Tablet */
+@media (max-width: 980px) {
+  #main .content-box {
+    margin: 3rem 5vw;
+    padding: 2rem 2rem 0rem 2rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 736px) {
+  #main .content-box {
+    margin: 2rem 1.5rem;
+    padding: 2rem 2rem 0rem 2rem;
+  }
+}
+
+/* Style for code blocks inside content-box */
+.content-box pre{
+  text-align: left;               /* always left-aligned */
+  white-space: pre-wrap;          /* wrap long lines */
+  word-break: break-word;         /* prevent overflow words */
+  font-family: 'Courier New', Courier, monospace; 
+  overflow-x: auto;               /* scroll horizontally if needed */
+  display: block;                 /* ensures it behaves like a block */
+}
+
+.content-box code{
+  text-align: left;               /* always left-aligned */
+  white-space: pre-wrap;          /* wrap long lines */
+  word-break: break-word;         /* prevent overflow words */
+  font-family: 'Courier New', Courier, monospace; 
+  overflow-x: auto;               /* scroll horizontally if needed */
+  display: block;                 /* ensures it behaves like a block */
 }
