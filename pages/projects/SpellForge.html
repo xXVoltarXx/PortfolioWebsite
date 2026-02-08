@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Generic - Michael Kleinbriel</title>
+		<title>Spell Forge - Michael Kleinbriel</title>
 		<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -61,80 +61,123 @@
 							<div class="row aln-top content-box">
 								<div class="col-6 col-12-medium">
 									<h2>Making a Massive Pivot - Producing and Design</h2>
+									<h3>The Realization</h3>
 									<p>
-										Prior to my involvement in the project, Spell Forge was a very simple game. Each player was on their own copy of the single small map, they killed enemies, collected up to 1 artifact and enchantment, and then fought each other with those in the final battle once the game timer expired. 
+										Prior to my involvement in the project, Spell Forge was a very simple game. Each player was on their own copy of the single small map, they killed enemies, collected up to 1 artifact and enchantment, and then fought each other with those in the final battle once the game timer expired. The previous team made the decision that the game should <b>increase in complexity</b> in order to make it more replayable. 
 									</p>
-									<h3>Really fun, but only for 15 minutes</h3>
-									<ul>
-										<li>Art Style was very inviting</li>
-										<li>Too much emphasis on player skill</li>
-										<li>Some modifiers were too much</li>
-										<li>Some maps were too different than others</li>
-									</ul>
-									<p>The game attracted a more casual audience than we were expecting, which influenced some of the feedback we received. The visuals and design of the game screamed "Casual Fun" but the weapon and modifiers did not. Most weapons were hitscan and rewarded precision and if someone didn't have that skill, then they would be at a heavy disadvantage. Some of the modifiers, especially the movement-related ones, made the player too hard to control for some playtesters. Our game was more like <b>Counter-Strike</b> than <b>Team Fortress 2</b> which went against our target audience.</p>
-									<p>Meeting with the other designers on the team, we came up with the following plan to address feedback, which will be implemented in Phase Two of development which is occuring right now:</p>
-									<ul>
-										<li>More emphasis on Area-of-Effect weapons rather than hitscan ones</li>
-										<li>Modifiers should influence the gameplay, but not control it (outside of special occasions)</li>
-										<li>Maps should have a consistent size and not lean too heavily movement skill</li>
-									</ul>
+									<p>
+										Upon joining the project in the early summer leading up to a semester of development, I worked with the team and the other Designer to come up with how we could increase the complexity of the game while still keeping close to the game's core vision, <b>PvP Spellcrafting.</b> Our solution was  <b>in-match minigames,</b> such as Capture-the-Flag, Hot Potato, King of the Hill, etc. With inspiration from <i>Kirby Air Riders</i> we believed we were on the right track and we worked on these modes during the summer. However, when the semester started and we started to get feedback on it, we realized that while we did increase the game's replayability, <b>the core player gameloop was still too simple</b> and not engaging enough for prolonged play. Upon realizing that we added more content to a <b>foundation that was too simple,</b> we <b>scrapped our entire summer work</b> and <b>started back at the beginning.</b>
+									</p>
+									<h3>Redesigning Core Gameplay</h3>
+									<p>
+										With this massive setback putting us behind our original semester-long schedule, the other Designer and I had to quickly come up with the new core design of the game and I had to plan out the rest of the semester with the team. After deliberating for a while and doing tests, we decided to take inspiration from <i>Noita</i> and its Spellcrafting system which then expanded into the game that Spell Forge is today (as explained at the top of the page)
+									</p>
+									<h3>The Result and Reflection on the Pivot</h3>
+									<p>
+										People loved the game. While its complexity did take some getting use to, the issue with the original design was solved and the game turned out how we all wanted to be. As a Producer, I was thrown into a situation where I had to manage a pivot that could have been disastrous for the project if it didn't succeed, but by working with the team and communicating with them, we were able to make the pivot successful and we ended up with a much better game because of it.
+									</p>
 								</div>
 								
 								<div class="col-6 col-12-medium">
 									<span class="image fit">
-										<img src="/images/projects/Thoober/ThooberGameShowcase.jpg" alt="">
+										<img src="/images/projects/SpellForge/SpellForgeScreenshot1.png" alt="">
+										<br>
+										<img src="/images/projects/SpellForge/SpellForgeScreenshot4.png" alt="">
 									</span>
 								</div>
 							</div>
 							<div class="row aln-top content-box">
 								<div class="col-6 col-12-medium">
 									<span class="image fit">
-										<img src="/images/projects/Thoober/41MShowcase.gif" alt="">
-										<img src="/images/projects/Thoober/NonStaticRecoilScript.png" alt=""/>
+										<img src="/images/projects/SpellForge/SpellForgeScreenShake.gif" alt="">
+										<br>
+										<img src="/images/projects/SpellForge/SpellForgeCGCS.png" alt="">
 									</span>
 								</div>
-
 								<div class="col-6 col-12-medium">
-									<h2>The 41M - Weapon Design and Implementation</h2>
-									<h3>Design</h3>
-									<p>
-										When designing the 41M, I wanted to create a weapon that rewarded players who stuck with it and didn't toss it away after a few shots which is what happened to most of the weapons in the game. I wanted to create a weapon that had a learning curve, but also one that was rewarding to learn and use. The 41M is a semi-fire rifle that decreases in recoil as it's shot. This means that the more you shoot it, the easier it is to control and the more accurate it becomes. This created a <b>risk-reward system</b> where players have to decide whether to fire a few extremely inaccurate shots that will expose them to other players, but be rewarded with pin-point accuracy in the later-third of the magazine.
-									</p>
-									<h3>Implementation</h3>
-									<p>
-										When implementing the weapon, I utilized the <b>Standard Shooter</b> script as a base and <b>created a <i>Non-Static Recoil</i> component that could be used on any weapon</b> to hook into it. The goal for weapon components in Thoober is that they should be weapon-agnostic and be able to hook into any Standard Shooter. With this goal in mind, I designed and created the script to fit perfectly with the Standard Shooter and to be <b>exremely Designer-Friendly.</b>
-									</p>
-									<p>
-										I utlized <b>Enums</b> to allow Designers to switch between what type of recoil they want, and I utlized Unity's <b>Animation Curves</b> to allow for fine control over the recoil. I also incorporated <b>curve scaling</b> in order to make a Designer's life easier, as Unity's Animation Curve editor for <i>variables specifically</i> is rather difficult to use when the size of the numbers is outside of the 0-1 Range. With curve scaling, a Designer can design their curve easily in the inspector and then scale it to their needs with no hassle.
-									</p>
-									<h3>Weapon Result</h3>
-									<p>The 41M was well-received by players and added a unique dynamic to the gameplay. Some players would frequently take potshots from a great distance at other players and then suprise them with their perfect accuracy as they advance towards them. Other players would use the weapon guns ablazing at close range and hope that the initial extreme recoil would allow their shots to hit another player nearby.</p>
-									<p>With the <b>NonStaticRecoil Script,</b> Designers found it intuitive and easy to use and it has now become a part of other weapons in the game. No changes to it have been needed so far, which suggests that it has accomplished my goal for the script, that being that it should be <b>Weapon-Agnostic</b> and <b>Designer-Friendly.</b></p>
+									<h2>Camera Effects</h2>
+									<h3>Convey Valuable Information with the Camera</h3>
+									<p></p>
 								</div>
 							</div>
 							<div class="row aln-top content-box">
 								<div class="col-6 col-12-medium">
-									<h2>Project Reflection</h2>
+									<span class="image fit">
+										<img src="/images/projects/SpellForge/SpellForgeGlyphMnK.png" alt="">
+										<h3>Mouse and Keyboard Glyphs</h3>
+										<img src="/images/projects/SpellForge/SpellForgeGlyphController.png" alt=""/>
+										<h3>Controller Glyphs (Playstation has Playstation Buttons)</h3>
+										<img src="/images/projects/SpellForge/SpellForgeGlyphSetUpCode.png" alt="">
+										<img src="/images/projects/SpellForge/SpellForgeGlyphUpdate.png" alt="">
+										<img src="/images/projects/SpellForge/SpellForgeGlyphCode.png" alt="">
+									</span>
+								</div>
+
+								<div class="col-6 col-12-medium">
+									<h2>On-Screen Controls and Dynamic Glyphs</h2>
+									<h3>The Problem - Forgetting Controls</h3>
 									<p>
-									While the development of the game is ongoing, there is still a lot I have learned, and will continue to learn, from working on it.
+										One issue found while playtesting the game was that players were having a hard time remembering what button did what, especially with <b>inventory navigation</b>. This was especially a problem for new players who hadn't had the time to learn the controls yet. We needed a way to help players learn the controls and remember them during gameplay without having to pause the game and look at a control scheme or something like that.
 									</p>
-									<h3>Mentorship and Teaching</h3>
-									<p>As the senior-most developer on the team and the team being comprised of my younger brother and his friends, I took it upon myself to try and assist everyone on the team as much as I can as they started to learn game development with Unity. Whether it be explaining best code practices, level design tips I've learned over the years, model optimization technique, game optimization techniques, design tips, I try to help and teach them as much as I can. <b>I want to be the Mentor and Teacher to them that I wish I had when I first started game development, that way they don't make the same mistakes as me and so that they can have a head-start compared to the rest of their cohort.</b></p>
+									<h3>The Solution - Dynamic On-Screen Controls with Controller Glyphs</h3>
+									<p>
+										<p>While the solution does make the game's UI more cluttered, it greatly improves the player's ability to learn and remember the controls. By dynamically displaying the correct controller glyphs based on the player's input device, we ensure that the information is always relevant and easy to understand.</p>
+									</p>
 									
-									<h3>Design</h3>
-									<p>This is the second project I've worked on with online multiplayer functionality and this game is way more casual than the other (<a href="">Spell Forge</a>). With this game being a First Person Shooter though, I was right at home in my home territory. On this project, I really learned how to communicate myself as a Designer better than I could before. As mentioned, the team is comprised of those new to Game Development so I had to learn to disregard any "Design Assumptions" that my peers in my cohort have but these Designers do not. This resulted in me being very explicit in my reasonings <i>why</i> I designed something a certain way and to use more game references than I normally would. I will be carrying this lesson on with me even when I'm on a team with experienced Designers because it helps get my ideas and reasonings across better and it greatly helps non-Designers understand my choices too (especially if someone has to program my Design).</p>
-
-									<h3>Programming</h3>
-									<p>This is the first time I'm not the "lead" on something. Usually on projects I am the lead Tech Designer and/or Systems programmer or I'm programming a system alone while other programmers work on something else. However, this time I dove into <b>Networking Programming,</b> which is something I haven't really delved that much into before. So, I had to <b>learn how to program  networking-involved systems</b> and <b>how to update and refactor my code as the Lead Networking Programmer optimized the networking code.</b> This required me to stay up-to-date with the latest iteration of our core systems and to keep my systems to the same standard. This resulted in me working collaboratively on the same script with another programmer which is something I haven't done before. Normally I would touch scripts <i>after</i> another programmer was done with it</p>
+									<h3>How I Did It</h3>
+									<p>
+										I accomplished this by attaching two functions on our <i>PlayerCanvas</i> script which handles the player information and then a single script that is on the Glyph object itself. <br><br>Essentially, <b>SetUpGlyphs()</b> gets the <i>PlayerInput</i> component for the desired <i>local player index</i> and the call <b>UpdateGlyphs()</b>. <br><br>This function gets the current controller's name and then tells every Glyph what it is. I took great care in researching the internal name of every controller (specifically Playstation) so that any Xbox and Playstation controller would work.<br><br>Then, the Glyph script with <b>SetGlyph()</b> takes that information and changes the Sprite of the Glyph to the correct one based on the input device. I also designed it in such a way that some glyphs only popped up if they were needed. For example, Dash only has <b>one binding on keyboard but two on controller,</b> so the extra glyph is hidden when using Mouse and Keyboard.
+									</p>
+									<h3>Result</h3>
+									<p>
+										This had an immediate postive effect on players' ability to learn and remember the controls. It also made the game more accessible to new players who may not be familiar with the controls yet which resulted in them giving us better playtesting feedback.
+									</p>
+								</div>
+							</div>
+							<div class="row aln-top content-box">
+								<div class="col-6 col-12-medium">
+									<h2>UI Design - Clean and Accessible During Split-Screen</h2>
+									<h3>My Vision</h3>
+									<p>
+										As the sole UI-Designer, my goals were the following:
+										<ul>
+											<li>Design a Clean and Minimalistic UI</li>
+											<li>Make Sure the UI was Accessible and Readable During Split-Screen Gameplay</li>
+											<li>Limit the Places the Player Needs to Look At</li>
+											<li>Ensure that the UI was Able to be Easily Modified by Programmers if Needed</li>
+										</ul>
+										There were limits to this goal though, as the complexity of Spell Forge required a pretty complex UI. But, I tried to keep it as simple as I could.<br><br>
+										With the <b>In-Game UI</b>, I decided to <b>show the important information near the player</b> with further detail being at the bottom of the screen. This can be seen with the <b>health and mana bars by the player.</b><br><br>
+										With the <b>Info Screen UI</b> the goal was to show only information that couldn't fit on the in-game UI so that the screen wasn't cluttered. Here, the player can see the minimap, the power level of every player in the game, their current artifact and description, and the currently selected enchantment and its description and stats. The screen was kept semi-transparent so that players could still see the game and be aware of what was going on while they were looking at the info screen. <b>It should be noted that this screen is not meant to be seen that much during gameplay. It's meant to be a quick glance and that's it.</b> Hence why its items are pretty large.<br><br>
+										The big challenge with this UI was keeping it all <b>readable while playing locally with up to 3 other players.</b> So, this resulted in me having clear shapes and having UI elements be large so that it is visible even when the screen is split into 4. I also made sure to use color and contrast to make sure that the UI stood out against the game and was easy to read. I took heavily inspiration from <i>Minecraft's</i> UI for this as it was <b>proven to work well.</b><br><br>
+										In the next section, you can see some of the other UI layouts I designed for the game.
+									</p>
 								</div>
 								
 								<div class="col-6 col-12-medium">
 									<span class="image fit">
-										<img src="/images/projects/Thoober/ThooberScreenshot1.png" alt="">
+										<img src="/images/projects/SpellForge/SpellForgeScreenshot5.png" alt="">
 										<br>
-										<img src="/images/projects/Thoober/ThooberScreenshot2.png" alt="">
+										<img src="/images/projects/SpellForge/SpellForgeTabUI.png" alt="">
 										<br>
-										<img src="/images/projects/Thoober/ThooberScreenshot3.png" alt="">
+										<img src="/images/projects/SpellForge/SpellForge3Player.png" alt="">
+									</span>
+								</div>
+							</div>
+							<div class="row aln-top content-box">
+								<div class="col-6 col-12-medium">
+									<span class="image fit">
+										<img src="/images/projects/SpellForge/SpellForgeMainMenuUI.png" alt="">
+										<br>
+										<img src="/images/projects/SpellForge/SpellForgeLobbyUI.png" alt="">
+									</span>
+								</div>
+								
+								<div class="col-6 col-12-medium">
+									<span class="image fit">
+										<img src="/images/projects/SpellForge/SpellForgeLearnUI.png" alt="">
+										<br>
+										<img src="/images/projects/SpellForge/SpellForgeControlsUI.png" alt="">
 									</span>
 								</div>
 							</div>
