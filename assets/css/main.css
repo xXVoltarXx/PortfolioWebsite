@@ -3982,8 +3982,8 @@ body #main.wrapper > .inner {
 
 /* Card-style sections */
 #main .content-box {
-  margin: 0 0 5rem -4vw;      /* spacing + width control */
-  padding: 3rem 3rem 0rem 3rem; /* spacing */
+  margin: 0 clamp(-10rem, -8vw, -4rem) 5rem clamp(-10rem, -8vw, -4rem);
+  padding: 3rem 3rem 0 3rem;
   background: rgba(255, 255, 255, 0.025);
   border-radius: 0.75rem;
 }
